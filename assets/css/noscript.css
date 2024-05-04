@@ -1,0 +1,87 @@
+/*
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Header */
+
+	body.is-preload #header .inner {
+		-moz-transform: none;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		opacity: 1;
+	}
+
+		body.is-preload #header .inner .actions {
+			-moz-transform: none;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
+			opacity: 1;
+		}
+
+	body.is-preload #header:after {
+		opacity: 0;
+	}
+
+	.carousel {
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	.carousel .slide {
+		display: none;
+	}
+	
+	.carousel .slide:first-child {
+		display: block;
+	}
+	
+	.carousel input[name="carousel"] {
+		display: none;
+	}
+	
+	.carousel input[name="carousel"]:checked ~ .slide {
+		display: none;
+	}
+	
+	.carousel input[name="carousel"]:checked + label + .slide {
+		display: block;
+	}
+	
+	.carousel-control-prev {
+		left: -120px; /* Adjust as needed */
+	}
+	
+	.carousel-control-next {
+		right: -60px; /* Adjust as needed */
+	}
+	.carousel-control-prev,.carousel-control-next {
+		background-color: #c81212; /* Change to your desired color */
+}
+/* Change the color of the carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    color: #ffffff; /* Change to your desired color */
+}
+
+/* Change the background color of the carousel control buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff; /* Change to your desired color */
+}
+
+/* Change the color of the carousel control buttons on hover */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: #ffffff; /* Change to your desired color */
+}
+
+/* Change the background color of the carousel control buttons on hover */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: #0056b3; /* Change to your desired color */
+}
+
