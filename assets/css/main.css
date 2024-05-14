@@ -3606,4 +3606,167 @@ input, select, textarea {
 			}
 			
 			
+			.project-section {
+				opacity: 0; /* Initially hide the project section */
+				transition: opacity 0.5s ease; /* Apply transition effect */
+			}
 			
+			.project-section.show {
+				opacity: 1; /* Fade in when the 'show' class is added */
+			}
+			
+			.project-section {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 15px); /* Two projects per row with 15px margin */
+    float: left;
+}
+
+.project-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.project-details h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.project-details p {
+    color: #666;
+}
+
+.view-project-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-project-btn:hover {
+    background-color: #45a049;
+}
+
+/* Clear floats to prevent wrapping issues */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.project-section {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    margin-bottom: 30px;
+    border-radius: 10px;
+	margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 30px); /* Two projects per row with 30px margin */
+    float: left;
+    margin-right: 15px; /* Adjusted right margin for equal padding */
+	margin-left: 15px;
+	flex-direction: column; /* Stack child elements vertically */
+}
+
+.project-section:last-child {
+    margin-right: 0; /* Remove right margin for the last project section */
+}
+
+.project-thumbnail {
+    flex: 1; /* Expand to fill available space */
+}
+
+.project-details {
+    padding: 20px;
+    background-color: #fff;
+    flex: 1; /* Expand to fill available space */
+}
+
+
+
+.project-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.project-thumbnail:hover img {
+    transform: scale(1.05);
+}
+
+.project-details {
+    padding: 20px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.project-details:hover {
+    background-color: #f5f5f5;
+}
+
+.project-details h3 {
+    margin-top: 0;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.project-details:hover h3 {
+    color: #555;
+}
+
+.project-details p {
+    color: #666;
+}
+
+.view-project-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-project-btn:hover {
+    background-color: #45a049;
+}
+
+/* Clear floats to prevent wrapping issues */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.description {
+    max-height: calc(3 * 1.2em); /* Display three lines of description */
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1.2em; /* Ensure space for "Read More" button */
+}
+
+
+.project-details {
+    position: relative; /* Ensure positioning context for absolute positioning of buttons */
+}
+
+.read-more-btn,
+.read-less-btn {
+    position: absolute; /* Position buttons relative to project details */
+    /* bottom: 0; */
+    left: 20px;
+}
